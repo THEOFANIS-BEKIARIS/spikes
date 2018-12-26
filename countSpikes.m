@@ -4,7 +4,7 @@ range = 30;
 for i =1:8
 	name = ['Data/Data_Test_' num2str(i)];
 	load(name)
-        
+        sequenceOfTimes = 1:1:length(data);
 	std_n = median(abs(data))/0.6745;   
     %Kanonas gia ta K
     %range 30
